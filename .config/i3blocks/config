@@ -1,0 +1,67 @@
+
+# Global properties
+
+# Each block command defaults to the script name to avoid boilerplate.
+# Change $SCRIPT_DIR to the location of your scripts!
+command=$HOME/.config/i3blocks/$BLOCK_NAME/$BLOCK_NAME
+separator_block_width=15
+markup=none
+
+
+[volume]
+#command=$SCRIPT_DIR/volume
+LABEL=♪ 
+#LABEL=VOL 
+interval=3
+signal=10
+STEP=5%
+color=#de66b6
+
+[memory]
+interval=once
+signal=1
+
+[cpu_usage]
+label=CPU 
+interval=3
+min_width=CPU: 100%
+separator=true
+color=#04efc0
+
+[essid]
+label=📶 
+interval=10
+separator=false
+color=#66de76
+
+[wifi]
+INTERFACE=wlan0
+interval=10
+separator=True
+#color=#66de76
+
+[battery]
+label=BAT
+label=🗲  
+#instance=1
+interval=5
+separator=true
+
+[temperature]
+label=🌡️ 
+color=#e64427
+interval=10
+
+
+[date]
+label=🗓️ 
+command=echo $(date '+%d %b')
+interval=5
+separator=false
+
+[time]
+label=🕓
+command=echo $(date '+%H:%M')
+interval=5
+
+
